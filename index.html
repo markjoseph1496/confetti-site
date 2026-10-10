@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Confetti</title>
+  <meta name="description" content="QR photo sharing for events — guest photos go straight to the hosts' Google Drive.">
+  <style>
+    :root {
+      --bg: #fffdf8;
+      --fg: #1f2430;
+      --muted: #6b7280;
+      --accent: #e0475b;
+      --accent-soft: #fde8eb;
+      --card: #ffffff;
+      --border: #e6e2d8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      padding: 3rem 16px 4rem;
+    }
+    main { max-width: 620px; margin: 0 auto; }
+    .mark { font-size: 3rem; line-height: 1; }
+    h1 { font-family: Georgia, "Times New Roman", serif; font-size: 2.4rem; margin: 0.5rem 0 0.25rem; }
+    .tagline { color: var(--muted); margin: 0 0 2.25rem; font-size: 1.05rem; }
+    .steps { display: flex; flex-direction: column; gap: 0.9rem; padding: 0; margin: 0 0 2.25rem; list-style: none; }
+    .steps li {
+      display: flex; gap: 0.9rem;
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 12px; padding: 0.9rem 1.1rem;
+    }
+    .n {
+      flex-shrink: 0; width: 1.7rem; height: 1.7rem; border-radius: 50%;
+      background: var(--accent-soft); color: var(--accent);
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 0.85rem; align-self: center;
+    }
+    h2 { font-family: Georgia, "Times New Roman", serif; font-size: 1.3rem; margin: 0 0 0.5rem; }
+    p { margin: 0 0 1rem; }
+    .fine { color: var(--muted); font-size: 0.9rem; border-top: 1px solid var(--border); padding-top: 1.25rem; margin-top: 2.25rem; }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+<main>
+  <div class="mark" aria-hidden="true">🎉</div>
+  <h1>Confetti</h1>
+  <p class="tagline">Every guest is a photographer. Scan a QR code at the event, share your photos — they land straight in the hosts' album.</p>
+
+  <ol class="steps">
+    <li><span class="n">1</span><span>Scan the QR code on your table or invitation — no app, no account.</span></li>
+    <li><span class="n">2</span><span>Tell us your name, then complete photo missions or share any photos from your camera roll.</span></li>
+    <li><span class="n">3</span><span>Your photos go directly into the hosts' private Google&nbsp;Drive album, sorted by guest and mission.</span></li>
+  </ol>
+
+  <h2>For hosts</h2>
+  <p>Confetti is a small self-hosted app. You create an event, print its QR code, and guests' photos arrive in your own Google&nbsp;Drive — organized into a folder per guest, with photo-mission subfolders. Nothing is stored anywhere else.</p>
+
+  <p class="fine">Confetti is a personal, non-commercial project. Questions: <strong>markjoseph1496@gmail.com</strong> · <a href="./privacy.html">Privacy policy</a></p>
+</main>
+</body>
+</html>
